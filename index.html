@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Climate Change Visualization Slider</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link rel="stylesheet" href="climateslider.css">
+	</head>
+	<body>
+		<div id="intro">
+			<div="introIntro">
+				<h2>Humans are warming the climate by burning fossil fuels</h2>
+				<h4>The consequences of a warmer climate are easy to understand, but visualizing the complex link
+					between fossil fuel combustion and a warming climate.
+				<h3>This tool estimates the climate effects of fossil fuel combustion</h3>
+				<button id="instructionStartPrompt">Show me how</button>
+			</div>
+			
+		</div>
+		<div id="content">
+		    
+		    
+		    
+	    
+	    	
+	    	
+			<div id="powerGenerationSetter">
+				<div id="results">
+					<h4>If this usage rate remains constant over the next 50 years, the American electrical sector alone will be responsible for this increase in temperature</h3>
+					<div id="meterBackground">
+						<label id="celciusWarming" for="temperature" class="temperatureLabel">0C</label>
+						<meter id="warmingMeter" max="0.4" optimum="0" value="0"></meter>
+						<span id="ferenheightWarming" class="temperatureLabel">0°F</span>
+					</div>
+					<h3>Keep in mind, this is in addition to all other global sources of warming- cars, boats, not to mention other countries!</h5>
+				</div>
+				<h4 id="instructions">Slide the bars on the bottom back and forth to determine how much electricity generated
+					from different fossil fuels each American will use each year
+				</h4>
+				<div class="slider">
+					<label for="grade">Grade</label>
+					<input type="range" id="grade" list="gradeData" class="useRange" min="0" max="2000" value="1000">
+					</input>
+					<div class="exactGroup">
+					    <input type="number" id="exactGrade" class="exactData" min="-10" max="10" step = "0.01">
+					    </input>
+					    <label for="exactGrade" class="exactLabel">°</label>
+				    </div>
+				</div>
+				<div class="slider">
+					<label for="distance">Distance</label>
+					<input type="range" id="distance" list="routeData" class="useRange" min="1" max="12000" value="1000">
+					</input>
+					<div class="exactGroup">
+					    <input type="number" id="exactDistance" class="exactData" min="0" max="3000" step="0.01" value="10">
+					    </input>
+					    <label for="exactDistance" class="exactLabel">Miles</label>
+					</div>
+				</div>
+				<div class="slider">
+					<label for="quanity">Cars</label>
+					<input type="range" id="quanity" list="routeData" class="useRange" min="0" max="2000" value="0">
+					</input>
+					<div class = "exactGroup">
+					    <input type = "number" id = "exactQuanity" class = "exactData" min = "0" max = "2000" step = "1" >
+					    </input>
+					    <label for = "exactQuanity" class = "exactLabel">Cars</label>
+					</div>
+				</div>
+				<div class="slider">
+				    <label for="speed">Speed</label>
+				    <input type="range" id="speed" class="useRange" min="40" max="90" step="5" value="70">
+				    </input>
+				    <div class="exactGroup">
+				        <input type="number" value="70" id="exactSpeed" class="exactData" min="40" max="90" step="5">
+				        </input>
+				        <label for="exactSpeed" class = "exactLabel">MPH</label>
+				    </div>
+				</div>
+				
+				
+				
+				
+				<h4>Each tick mark represents 1000 kilowatt hours of Energy</h4>
+				<p>The default values represent current energy usage</p>
+			</div>
+		</div>
+		
+		
+		
+	    <datalist id="gradeData">
+			
+		
+		</datalist>
+	    <datalist id = "distanceData">
+	        
+	        <option value = "0">
+	        <option value = "0">
+	        <option value = "0">
+	        <option value = "0">
+	         
+	    </datalist>
+		
+		
+	</body>
+</html>
