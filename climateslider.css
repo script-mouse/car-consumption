@@ -27,16 +27,25 @@ label {
 	margin-right: 90vw;
 	float: left;
 	text-align: center;
+	
 }
 meter {
 	border-radius: 3% / 50%;
+	width: 80vw;
+	height: 5vh;
+	position: absolute;
+	float: right;
+	left: 10vw;
 }
 body {
 	margin: 0px;
 }
+/*
 #content {
 	display: none;
 }
+*/
+
 .exactGroup {
     float: right;
     position: absolute;
@@ -59,31 +68,26 @@ body {
 }
 #intro {
 	animation-duration: 700ms;
+	display: none;
 }
 * {
 	background-color: aliceblue;
 	text-align: center;
 }
-#warmingMeter {
-	width: 80vw;
-	height: 15vh;
-	position: absolute;
-	float: right;
-	left: 10vw;
-}
-#meterBackground {
-	height: 15vh;
+.meterBackground {
+	padding-top: 0.75vh;
+	height: 5vh;
 }
 .temperatureLabel {
 	position: relative;
 	margin-right: 0px;
 	font-size: 1.8em;
-	top: calc(7.5vh - 1em);
+	top: calc(2.5vh - 1em);
 }
-#celciusWarming {
+.temperatureLabel:first-child {
 	float: left;
 }
-#ferenheightWarming {
+.temperatureLabel:last-child {
 	float: right;
 }
 
