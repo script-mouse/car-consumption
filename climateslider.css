@@ -30,7 +30,7 @@ label {
 	
 }
 meter {
-	border-radius: 3% / 50%;
+	border-radius: 1.25% / 50%;
 	width: 80vw;
 	height: 5vh;
 	position: absolute;
@@ -82,7 +82,7 @@ body {
 	position: relative;
 	margin-right: 0px;
 	font-size: 1.8em;
-	top: calc(2.5vh - 1em);
+	top: calc(2.875vh - 1em);
 }
 .temperatureLabel:first-child {
 	float: left;
