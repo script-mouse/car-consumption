@@ -58,7 +58,7 @@
 					<input type="range" id="grade" list="gradeData" class="useRange" min="0" max="2000" value="1000">
 					</input>
 					<div class="exactGroup">
-					    <input type="number" id="exactGrade" class="exactData" min="-10" max="10" step = "0.01">
+					    <input type="number" id="exactGrade" class="exactData" min="-10" max="10" step = "0.01" value="0">
 					    </input>
 					    <label for="exactGrade" class="exactLabel">°</label>
 				    </div>
@@ -85,10 +85,10 @@
 				</div>
 				<div class="slider">
 				    <label for="speed">Speed</label>
-				    <input type="range" id="speed" class="useRange" min="40" max="90" step="5" value="70">
+				    <input type="range" id="speed" class="useRange" min="1" max="86" step="0.1" value="36">
 				    </input>
 				    <div class="exactGroup">
-				        <input type="number" value="70" id="exactSpeed" class="exactData" min="40" max="90" step="5">
+				        <input type="number" value="50" id="exactSpeed" class="exactData" min="15" max="100" step="0.1">
 				        </input>
 				        <label for="exactSpeed" class = "exactLabel">MPH</label>
 				    </div>
@@ -116,7 +116,8 @@
 	        <option value = "0">
 	         
 	    </datalist>
-		
+		<script src="https://gas-guzzle.web.app/gasretrieval.js" type="module">
+		</script>
 		
 	</body>
 </html>
